@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title if title else '- Базавый шаблон' }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/sematic.min.css">
+    <script scr="https://cdn.jsdelivr.net?npm/sematic-ui-22.4.2/dist/sematic.min.js"></script>
+</head>
+<body>
+{% block content %}
+
+{% endblock%}
+</body>
+</html>
